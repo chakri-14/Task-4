@@ -1,102 +1,112 @@
-# 🌦️ WeatherApp
+# 🌦️Weather App with Redux & API Integration
 
-This project is a full-stack weather application with separate frontend and backend components.
+## 📌 Project Overview
 
-## Project Structure
+This project is a **Weather App** that fetches real-time weather data from the **OpenWeather API**. It is built using **React (Vite)** for the frontend and **Redux Toolkit** for state management. The app allows users to enter a city name and fetch current weather details. The project follows a modular structure, implementing best practices for state management and API handling.
 
+---
+
+## 🛠 Technologies Used
+
+### **Frontend:**
+
+- **React (Vite)** – Fast and optimized React framework
+- **Redux Toolkit** – For global state management
+- **Axios** – To fetch data from OpenWeather API
+- **CSS3** – For styling and UI enhancements
+
+### **Backend:** (Not Implemented in This Project)
+
+- If required, Node.js & Express can be added later
+
+### **External APIs:**
+
+- **OpenWeather API** – To fetch weather data based on user input
+
+---
+
+## 🚀 Installation & Setup
+
+Follow these steps to set up and run the project locally.
+
+### 🔹 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/chakri-14/your-repo-name.git
+cd your-repo-name
 ```
-WeatherApp/
-├── FRONTEND/   # React.js frontend
-├── BACKEND/    # Node.js + Express.js backend
-└── README.md   # Project documentation
+
+### 🔹 2️⃣ Install Dependencies
+
+#### **Frontend Setup (React + Vite)**
+
+```bash
+cd FRONTEND
+npm install
+```
+
+#### **Install Additional Packages**
+
+```bash
+npm install @reduxjs/toolkit react-redux axios
+```
+
+### 🔹 3️⃣ Set Up Environment Variables
+
+1. Create a `.env` file inside `FRONTEND` and add your **OpenWeather API key**:
+   ```env
+   VITE_WEATHER_API_KEY=your_api_key_here
+   ```
+
+### 🔹 4️⃣ Start the Development Server
+
+#### **Run Frontend (React + Vite)**
+
+```bash
+npm run dev
 ```
 
 ---
 
-# Backend Setup
+## 🎯 Features Implemented
 
-## Prerequisites
-
-- Install [Node.js](https://nodejs.org/)
-
-## Installation
-
-1. Navigate to the backend folder:
-   ```sh
-   cd BACKEND
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Create a `.env` file and add the following variables:
-   ```
-   PORT=5000
-   API_KEY=your_weather_api_key_here
-   ```
-4. Start the backend server:
-   ```sh
-   npm start
-   ```
-
-## Technologies Used
-
-- Node.js
-- Express.js
-- Axios (for API calls)
-- Dotenv
-- Cors
-
----
-
-# Frontend Setup
-
-## Prerequisites
-
-- Install [Node.js](https://nodejs.org/)
-
-## Installation
-
-1. Navigate to the frontend folder:
-   ```sh
-   cd FRONTEND
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the frontend development server:
-   ```sh
-   npm start
-   ```
-
-## Technologies Used
-
-- React.js
-- React Router
-- Axios (for API calls)
-
+✅ Fetches real-time weather data using OpenWeather API\
+✅ Uses **Redux Toolkit** to manage state efficiently\
+✅ Implements actions and reducers for state management\
+✅ Uses `createAsyncThunk` for API requests\
+✅ Displays weather details including temperature, humidity, and wind speed\
+✅ Integrated Redux DevTools for debugging\
 
 
 ---
 
-# Running the Application
+## 📢 Deployment (Optional)
 
-1. Start the backend server (`npm start` in `BACKEND` folder).
-2. Start the frontend server (`npm start` in `FRONTEND` folder).
-3. Open [http://localhost:3000](http://localhost:3000) in a browser to use the application.
+To deploy the frontend, use **Vercel**:
 
----
-
-# API Endpoints (Backend)
-
-| Method | Endpoint       | Description                         |
-| ------ | -------------- | ----------------------------------- |
-| GET    | /weather?city= | Fetch weather data for a given city |
+```bash
+npm run build
+vercel
+```
 
 ---
 
-# Deployment
+## 📝 Author
 
-To deploy the application, host the frontend on **Vercel/Netlify** and the backend on **Render/Heroku**.
+👤 **M. Chakralikith**\
+🔗 GitHub: [chakri-14](https://github.com/chakri-14)
+
+---
+
+## 🔥 Next Steps
+
+- Improve UI using **TailwindCSS** or **Material-UI**
+- Implement a **5-day weather forecast feature**
+- Add **local storage support** for recent searches
+- Introduce **unit testing with Jest**
+- Optimize API calls to reduce unnecessary requests
+
+🚀 **Happy Coding!** 😊
+
+
 
